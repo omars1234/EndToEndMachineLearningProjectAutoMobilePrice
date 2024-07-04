@@ -1,1 +1,6 @@
 ETE_MobilePricesenv/
+
+mlruns/
+
+*.txt
+!requirements.txt

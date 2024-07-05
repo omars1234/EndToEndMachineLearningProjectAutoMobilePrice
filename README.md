@@ -3,7 +3,7 @@
 
 ### *Why we are doing this project ?*
 
-  *1. This Project provides the industry with a well reliable analysis that drive the decision making in the industry of AutoMobile*
+  *1. This Project provides the industry with a well reliable analysis that drive the decision making in the industry of AutoMobiles*
 
   *2. Capstone projects are generally developed to energize students' critical thinking, problem-solving, oral communication, research, and teamwork abilities*
 

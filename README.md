@@ -45,7 +45,9 @@
 
      * *Check statistics of data set*
 
-  * *C. Modeling :*
+   * *C. To see the Analysis NoteBook in deep details please check [https://github.com/omars1234/AutoMobileML](https://github.com/omars1234/AutoMobileML)*  
+
+   * *D. Modeling :*
 
      * *Applied RandomizedSearchCV on liest of models and parameters :*   
 

@@ -1,6 +1,9 @@
 from src.AutoMobilePriceRegression.constants import *
 from src.AutoMobilePriceRegression.utils.common import read_yaml, create_directories
-from AutoMobilePriceRegression.entity.config_entity import DataIngestionConfig,PrepareBaseModelConfig,TrainingConfig
+from AutoMobilePriceRegression.entity.config_entity import (DataIngestionConfig,
+                                                            PrepareBaseModelConfig,
+                                                            TrainingConfig,
+                                                            ModelEvaluationConfig)
 import os
 
 
@@ -82,3 +85,22 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+
+    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
+        config = self.config.model_evaluation
+        params=self.params.GradientBoostingRegressor
+
+        create_directories([config.root_dir])
+
+        model_evaluation_config = ModelEvaluationConfig(
+            root_dir=Path(config.root_dir),
+            model_path=Path(config.model_path),
+            all_params=params,
+            metrix_file_name=Path(config.metrix_file_name),
+            training_data=Path(config.training_data),
+            testing_data=Path(config.testing_data)
+        )
+
+        return model_evaluation_config
+

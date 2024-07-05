@@ -196,3 +196,90 @@ x==========x]
 [2024-07-05 18:10:11,743: INFO: main: >>>>>> stage model Training stage completed <<<<<<
 
 x==========x]
+[2024-07-05 19:09:29,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:09:29,670: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:09:29,672: INFO: common: created directory at: artifacts]
+[2024-07-05 19:09:29,675: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-05 19:15:30,042: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:15:30,048: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:15:30,051: INFO: common: created directory at: artifacts]
+[2024-07-05 19:15:30,053: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-05 19:15:50,511: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:15:50,516: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:15:50,520: INFO: common: created directory at: artifacts]
+[2024-07-05 19:15:50,523: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-05 19:17:08,440: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:17:08,445: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:17:08,448: INFO: common: created directory at: artifacts]
+[2024-07-05 19:17:08,451: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-05 19:17:08,474: INFO: common: json file saved at: scores.json]
+[2024-07-05 19:40:47,719: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-05 19:40:47,724: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:40:47,725: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:40:47,725: INFO: common: created directory at: artifacts]
+[2024-07-05 19:40:47,726: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-05 19:40:47,726: INFO: data_ingestion: Inmgestion of the data is completed]
+[2024-07-05 19:40:47,726: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-05 19:40:47,727: INFO: main: >>>>>> stage prepare base model stage started <<<<<<]
+[2024-07-05 19:40:47,734: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:40:47,737: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:40:47,738: INFO: common: created directory at: artifacts]
+[2024-07-05 19:40:47,738: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-05 19:40:47,744: INFO: prepare_bsae_model: Read train and test data completed]
+[2024-07-05 19:40:47,763: INFO: main: >>>>>> stage prepare base model stage completed <<<<<<
+
+x==========x]
+[2024-07-05 19:40:47,764: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-05 19:40:47,768: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:40:47,770: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:40:47,771: INFO: common: created directory at: artifacts]
+[2024-07-05 19:40:47,771: INFO: common: created directory at: artifacts/training]
+[2024-07-05 19:40:47,872: INFO: main: >>>>>> stage model Training stage completed <<<<<<
+
+x==========x]
+[2024-07-05 19:40:47,873: INFO: main: >>>>>> stage model evaluation stage started <<<<<<]
+[2024-07-05 19:40:47,877: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:40:47,878: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:40:47,879: INFO: common: created directory at: artifacts]
+[2024-07-05 19:40:47,880: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-05 19:40:47,894: INFO: common: json file saved at: scores.json]
+[2024-07-05 19:40:47,894: INFO: main: >>>>>> stage model evaluation stage completed <<<<<<
+
+x==========x]
+[2024-07-05 19:41:04,544: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-05 19:41:04,548: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:41:04,549: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:41:04,550: INFO: common: created directory at: artifacts]
+[2024-07-05 19:41:04,550: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-05 19:41:04,551: INFO: data_ingestion: Inmgestion of the data is completed]
+[2024-07-05 19:41:04,551: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-05 19:41:04,552: INFO: main: >>>>>> stage prepare base model stage started <<<<<<]
+[2024-07-05 19:41:04,556: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:41:04,559: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:41:04,560: INFO: common: created directory at: artifacts]
+[2024-07-05 19:41:04,561: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-05 19:41:04,568: INFO: prepare_bsae_model: Read train and test data completed]
+[2024-07-05 19:41:04,585: INFO: main: >>>>>> stage prepare base model stage completed <<<<<<
+
+x==========x]
+[2024-07-05 19:41:04,586: INFO: main: >>>>>> stage model Training stage started <<<<<<]
+[2024-07-05 19:41:04,590: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:41:04,592: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:41:04,593: INFO: common: created directory at: artifacts]
+[2024-07-05 19:41:04,594: INFO: common: created directory at: artifacts/training]
+[2024-07-05 19:41:04,698: INFO: main: >>>>>> stage model Training stage completed <<<<<<
+
+x==========x]
+[2024-07-05 19:41:04,698: INFO: main: >>>>>> stage model evaluation stage started <<<<<<]
+[2024-07-05 19:41:04,703: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-05 19:41:04,705: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-05 19:41:04,706: INFO: common: created directory at: artifacts]
+[2024-07-05 19:41:04,706: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-05 19:41:04,719: INFO: common: json file saved at: scores.json]
+[2024-07-05 19:41:04,720: INFO: main: >>>>>> stage model evaluation stage completed <<<<<<
+
+x==========x]

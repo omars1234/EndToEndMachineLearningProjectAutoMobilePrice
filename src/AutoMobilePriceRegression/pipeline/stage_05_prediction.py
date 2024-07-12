@@ -1,27 +1,32 @@
-
-from AutoMobilePriceRegression.utils.common import logger
 import numpy as np
 import pickle
 import pandas as pd
-from AutoMobilePriceRegression.components.prepare_bsae_model import PrepareBaseModel
+from pathlib import Path
+
+
+
+from AutoMobilePriceRegression.utils.common import logger
+
 
 
 STAGE_NAME = "model evaluation stage"
 
 class PredictionPipeline:
     def __init__(self):
-        pass
-
-    def predict(self,features):
         with open("./artifacts/final_model.pkl","rb") as f:
-           loaded_model=pickle.load(f)
+           self.loaded_model=pickle.load(f)
 
-        preprocessor=PrepareBaseModel().get_data_transformer_object()
-        InputData_scaled=preprocessor.transform(features)
-        preds=loaded_model.predit(InputData_scaled)   
-        return preds
+        with open("./artifacts/model_preprocessor.pkl","rb") as f:
+           self.loaded_preprocessor=pickle.load(f)   
+
+    def predict(self,data):
+
+        preprocessor=self.loaded_preprocessor
+        InputData_scaled=preprocessor.transform(data)
+        prediction=self.loaded_model.predict(InputData_scaled)   
+        return prediction
         
-
+'''
 class InputData:
     def __init__(self,
                 num_of_doors:str, body_style:str,drive_wheels:str,
@@ -51,3 +56,7 @@ class InputData:
         except Exception as e:
             logger.exception(e)
             raise e
+
+'''
+
+

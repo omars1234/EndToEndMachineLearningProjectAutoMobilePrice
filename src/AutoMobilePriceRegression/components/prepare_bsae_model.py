@@ -37,9 +37,14 @@ class PrepareBaseModel:
         preprocessor=ColumnTransformer([
             ("num_pipeline",num_pipeline,numerical_columns),
             ("cat_pipelines",cat_pipeline,categorical_columns)
-            ])  
+            ])
         
+        import pickle
+        with open ("./artifacts/model_preprocessor.pkl","wb") as f:
+           pickle.dump(preprocessor,f)  
+                           
         return preprocessor
+        
     
     def initiate_data_transformation(self): 
         train_df=pd.read_csv(r"./artifacts/data_ingestion/train_data.csv")

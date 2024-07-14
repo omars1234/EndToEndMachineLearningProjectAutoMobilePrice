@@ -21,15 +21,14 @@ class ModelEvaluation:
         with open("./artifacts/final_model.pkl","rb") as f:
            loaded_model=pickle.load(f)
         
-        test_data=loadtxt('artifacts/prepare_base_model/test_data', delimiter=',')
+        test_data=pd.read_csv('artifacts/prepare_base_model/test_data.csv', delimiter=',')
         x_test,y_test=(
             
-            test_data[:,:-1],
-            test_data[:,-1]
+            test_data.drop("price",axis=1),
+            test_data["price"]
             )      
         rmse=np.sqrt(mean_squared_error(y_test,loaded_model.predict(x_test)))
         mse=mean_squared_error(y_test,loaded_model.predict(x_test))
         r2score=r2_score(y_test,loaded_model.predict(x_test))
         Scores={"rmse":rmse,"mse":mse,"r2score":r2score}
         save_json(path=Path("scores.json"),data=Scores)
-       

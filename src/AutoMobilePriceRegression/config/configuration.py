@@ -49,12 +49,14 @@ class ConfigurationManager:
             root_dir=Path(config.root_dir),
             base_model_path=Path(config.base_model_path),
             #updated_base_model_path=Path(config.updated_base_model_path),
+            source_URL=config.source_URL,
+            local_data_file_path=config.local_data_file_path,
             train_data_path= config.train_data_path,
             test_data_path=config.test_data_path        
             
         )
 
-        return prepare_base_model_config    
+        return prepare_base_model_config
     
 
 
@@ -99,7 +101,8 @@ class ConfigurationManager:
             all_params=params,
             metrix_file_name=Path(config.metrix_file_name),
             training_data=Path(config.training_data),
-            testing_data=Path(config.testing_data)
+            testing_data=Path(config.testing_data),
+            #mlflow_uri="https://dagshub.com/omars1234/Regression_Analysis.mlflow" 
         )
 
         return model_evaluation_config

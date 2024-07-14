@@ -6,7 +6,6 @@ import urllib.request as request
 import pickle
 import time
 
-from sklearn.metrics import r2_score,r2_score,mean_absolute_percentage_error
 from sklearn.ensemble import GradientBoostingRegressor
 
 from AutoMobilePriceRegression.config.configuration import TrainingConfig
@@ -19,13 +18,13 @@ class Training:
 
     def initiate_Training(self):   
         
-        input_feature_train_arr=loadtxt('artifacts/prepare_base_model/train_data', delimiter=',')
-        input_feature_test_arr=loadtxt('artifacts/prepare_base_model/test_data', delimiter=',')
+        input_feature_train_arr=pd.read_csv('artifacts/prepare_base_model/train_data.csv', delimiter=',')
+        input_feature_test_arr=pd.read_csv('artifacts/prepare_base_model/test_data.csv', delimiter=',')
         x_train,y_train,x_test,y_test=(
-            input_feature_train_arr[:,:-1],
-            input_feature_train_arr[:,-1],
-            input_feature_test_arr[:,:-1],
-            input_feature_test_arr[:,-1]
+            input_feature_train_arr.drop("price",axis=1),
+            input_feature_train_arr["price"],
+            input_feature_test_arr.drop("price",axis=1),
+            input_feature_test_arr["price"]
         )
         model=GradientBoostingRegressor(
                 subsample=self.config.subsample,

@@ -69,16 +69,35 @@
 		<div class="form-v9-content" style="background-image: url('static/assets/img/form-v9.jpg')">
 			<form class="form-detail" action="/predict" method="post">
 				<h2>Please Fill The Information</h2>
+                
 				<div class="form-row-total">
 
 					<div class="form-row">
-                        <label for="num_of_doors"> num of doors:</label>
-						<input type="text" name="num_of_doors" id="num_of_doors" class="input-text" placeholder="num_of_doors" required>
+                        <label for="num_of_doors">number of doors:</label>
+                        <select name="num_of_doors" id="num_of_doors">
+                            <option value=0>two</option>
+                            <option value=1>four</option>
+                        </select>    
 					</div>
 
-					<div class="form-row">
-                        <label for="body_style"> body style:</label>
-						<input type="text" name="body_style" id="body_style" class="input-text" placeholder="body_style" required>
+                    <div class="form-row">
+                        <label for="body_style">body style:</label>
+                        <select name="body_style" id="body_style">
+                            <option value=0>convertible</option>
+                            <option value=1>hardtop</option>
+                            <option value=2>hatchback</option>
+                            <option value=3>sedan</option>
+                            <option value=4>wagon</option>
+                        </select>    
+					</div>
+
+                    <div class="form-row">
+                        <label for="drive_wheels">drive wheels:</label>
+                        <select name="drive_wheels" id="drive_wheels">
+                            <option value=0>4wd</option>
+                            <option value=1>fwd</option>
+                            <option value=2>rwd</option>
+                        </select>    
 					</div>
 
 				</div>
@@ -87,35 +106,13 @@
 				<div class="form-row-total">
 
                     <div class="form-row">
-                        <label for="drive_wheels"> drive wheels:</label>
-						<input type="text" name="drive_wheels" id="drive_wheels" class="input-text" placeholder="drive_wheels" required>
+                        <label for="engine_location">engine location:</label>
+                        <select name="engine_location" id="engine_location">
+                            <option value=0>front</option>
+                            <option value=1>rear</option>
+                        </select>    
 					</div>
 
-
-                    <div class="form-row">
-                        <label for="engine_location"> engine location:</label>
-						<input type="text" name="engine_location" id="engine_location" class="input-text" placeholder="engine_location" required>
-					</div>
-
-				</div>
-
-
-                <div class="form-row-total">
-
-                    <div class="form-row">
-                        <label for="num_of_cylinders"> num of cylinders:</label>
-						<input type="text" name="num_of_cylinders" id="num_of_cylinders" class="input-text" placeholder="num_of_cylinders" required>
-					</div>
-
-                    <div class="form-row">
-                        <label for="fuel_system"> fuel system:</label>
-						<input type="text" name="fuel_system" id="fuel_system" class="input-text" placeholder="fuel_system" required>
-					</div>
-
-				</div>
-
-
-                <div class="form-row-total">
 
                     <div class="form-row">
                         <label for="length"> length:</label>
@@ -128,8 +125,7 @@
 					</div>
 
 				</div>
-
-
+            
                 <div class="form-row-total">
 
                     <div class="form-row">
@@ -140,6 +136,20 @@
                     <div class="form-row">
                         <label for="curb_weight"> curb weight:</label>
 						<input type="text" name="curb_weight" id="curb_weight" class="input-text" placeholder="curb_weight" required>
+					</div>
+
+                    <div class="form-row">
+                        <label for="num_of_cylinders">num of cylinders:</label>
+                        <select name="num_of_cylinders" id="num_of_cylinders">
+                            <option value=0>eight</option>
+                            <option value=1>five</option>
+                            <option value=2>four</option>
+                            <option value=3>six</option>
+                            <option value=4>three</option>
+                            <option value=5>twelve</option>
+                            <option value=6>two</option>
+                        </select>    
+
 					</div>
 
 				</div>
@@ -153,10 +163,24 @@
 					</div>
 
                     <div class="form-row">
+                        <label for="fuel_system">fuel system:</label>
+                        <select name="fuel_system" id="fuel_system">
+                            <option value=0>1bbl</option>
+                            <option value=1>2bbl</option>
+                            <option value=2>4bbl</option>
+                            <option value=3>idi</option>
+                            <option value=4>mfi</option>
+                            <option value=5>mpfi</option>
+                            <option value=6>spdi</option>
+                            <option value=6>spfi</option>
+                        </select>    
+
+					</div>
+
+                    <div class="form-row">
                         <label for="peak_rpm"> peak rpm:</label>
 						<input type="text" name="peak_rpm" id="peak_rpm" class="input-text" placeholder="peak_rpm" required>
 					</div>
-
 
 				</div>
 
@@ -196,7 +220,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <ul class="list-inline text-center">
                             <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/boktiarahmed73/">
+                                <a href="https://www.linkedin.com/in/omaralsoub65728229">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -212,7 +236,7 @@
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://github.com/entbappy">
+                                <a href="https://github.com/omars1234">
                                     <span class="fa-stack fa-lg">
                                         <i class="fas fa-circle fa-stack-2x"></i>
                                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>

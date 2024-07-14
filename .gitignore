@@ -4,3 +4,5 @@ mlruns/
 
 *.txt
 !requirements.txt
+
+EndToEndMachineLearningProjectAutoMobilePrice/research/02_data_prepare.ipynb

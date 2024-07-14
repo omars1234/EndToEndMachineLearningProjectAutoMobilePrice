@@ -14,7 +14,7 @@ class PrepareBaseModelTrainingPipeline:
         config = ConfigurationManager()
         prepare_base_model_config = config.get_prepare_base_model_config()
         prepare_base_model = PrepareBaseModel(prepare_base_model_config)
-        prepare_base_model.get_data_transformer_object()
+        prepare_base_model.download_file()
         prepare_base_model.initiate_data_transformation()
 
 

@@ -3,11 +3,14 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: new_cleaned_df.csv
+  source_URL: "C:/Users/Omar/Desktop/Omar_Files/Python_Analysis/EndToEndMachineLearningProjectAutoMobilePrice/new_cleaned_df.csv"
   local_data_file: artifacts/data_ingestion/data.csv
-  train_data_path: artifacts/data_ingestion/train_data.csv
-  test_data_path: artifacts/data_ingestion/test_data.csv
 
+
+data_validation:
+  root_dir: artifacts/data_validation
+  data_path: artifacts/data_ingestion/data.csv
+  STATUS_FILE: artifacts/data_validation/status.txt
 
 
 prepare_base_model:

@@ -1,0 +1,21 @@
+COLUMNS: 
+ num_of_doors: object
+ body_style: object
+ drive_wheels: object
+ engine_location : object
+ length : float64
+ width : float64
+ height : float64
+ curb_weight : int64
+ num_of_cylinders : object
+ engine_size : int64
+ fuel_system : object
+ peak_rpm : int64
+ city_mpg : int64
+ highway_mpg : int64 
+ price : int64
+
+
+
+TARGET_COLUMN:
+ name: price

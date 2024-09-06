@@ -1,60 +1,59 @@
+# *End To End Machine Learning Project for Auto Mobile Prices*
 
-# *Brief Project Overview & Objectives of the Capstone Project*
+## *Author  [Omar Soub](https://github.com/omars1234)*
 
-### *Why we are doing this project ?*
+## *Overview*
 
-  *1. This Project provides the industry with a well reliable analysis that drive the decision making in the industry of AutoMobiles*
+*In this Project ,we will use Python Language to apply an End To End Machine Learning Project for Predicting Auto Mobile Prices and then creating an app.*
 
-  *2. Capstone projects are generally developed to energize students' critical thinking, problem-solving, oral communication, research, and teamwork abilities*
+## *Usage*
 
-### *Problem Statement :*
+*Clone the repository:*
 
-  *1. Description of the Problem :   To predict  the selling prices of AutoMobiles based on the data provided in this analysis*
 
-  *2. Importance of Solving the Problem :  Unveil underlying patterns and contributing factors to the observed price for AutoMobiles based on the data provided ,facilitating more informed decision-making*
+```bash
+https://github.com/omars1234/EndToEndMachineLearningProjectAutoMobilePrice.git
+```
 
-  *3. Target Audience or Beneficiaries : General*  
+*Packages we applied :*
 
-  ### *Objectives and Goals*
+```bash
+pandas 
+dvc
+notebook
+numpy
+matplotlib
+seaborn
+pypickle
+python-box==6.0.2
+pyYAML
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML
+scipy
+Flask==3.0.3
+Flask-Cors
+scikit-learn
+xgboost
+mlflow
+flasgger==0.9.7.1
+loggin
+```
 
-  *1. Specific Aims of the Project : Predicting and forecasting prices for AutoMobiles basd on he given data*
+ ----------------------------------------
 
-  *2. Expected Outcomes : Expected Price*
+*To see the Analysis NoteBook in deep details please check [https://github.com/omars1234/AutoMobileML](https://github.com/omars1234/AutoMobileML)*  
 
-  ### *Methodology*
 
-  *1. Data Exploration*
 
-   * *A. Data Description :*
+## *Feedback*
 
-     * *The given dataset has the following Features:*
-     
-       * *Categorical features :  6 Features  [num_of_doors, body_style, drive_wheels,engine_location,num_of_cylinders, fuel_system]*
-     
-       * *Numerical features : 9 features [price,length, width, height, curb_weight, engine_size,peak_rpm, city_mpg, highway_mpg]*
+*If you have any feedback, please reach out to us at omars.soub@gmail.com*
 
-   * *B. Data Preprocessing :*
+## 🔗 Links
 
-     * *Missing Values*
+[*my github page-https://github.com/omars1234*](https://github.com/omars1234)
 
-     * *Duplicates Values*
-
-     * *Data types*
-
-     * *Unique values is each column*
-
-     * *Check statistics of data set*
-
-   * *C. To see the Analysis NoteBook in deep details please check [https://github.com/omars1234/AutoMobileML](https://github.com/omars1234/AutoMobileML)*  
-
-   * *D. Modeling :*
-
-     * *Applied RandomizedSearchCV on liest of models and parameters :*   
-
-          *GradientBoostingRegressor() Model with the following parameters :*
-            *SUBSAMPLE: 0.8*
-            *N_ESTIMATORS: 100*  
-            *MIN_SAMPLES_SPLIT: 2*  
-            *MIN_SAMPLES_LEAF: 1*  
-            *MAX_DEPTH: 4*  
-            *LEARNING_RATE: 0.1*  
+## *🛠 Skills*
+*python, R, SQL ,PowerBi ,Tableaue*

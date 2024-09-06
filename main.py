@@ -1,8 +1,10 @@
 from src.AutoMobilePriceRegression import logger
 from AutoMobilePriceRegression.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
-from AutoMobilePriceRegression.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
+from AutoMobilePriceRegression.pipeline.stage_data_validation import DataValidationPipeline
+from AutoMobilePriceRegression.pipeline.stage_02_data_transformation   import DataTransfornmationPipeline
 from AutoMobilePriceRegression.pipeline.stage_03_training import TrainingPipeline
 from AutoMobilePriceRegression.pipeline.stage_04_evaluation import ModelEvaluationPipeline
+
 import os
 
 #logger.info("welcome to my 1st log")
@@ -20,11 +22,24 @@ except Exception as e:
     raise e
 
 
-STAGE_NAME = "prepare base model stage"
+STAGE_NAME = "Data Validation stage"
 
 try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-    obj = PrepareBaseModelTrainingPipeline()
+    obj = DataValidationPipeline()
+    obj.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+
+
+STAGE_NAME = "data transformation stage"
+
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    obj = DataTransfornmationPipeline()
     obj.main()
     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
@@ -54,8 +69,6 @@ try:
 except Exception as e:
     logger.exception(e)
     raise e
-
-
 
 
 

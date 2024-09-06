@@ -1,19 +1,16 @@
-from flask import Flask,request,render_template
+from flask import Flask,render_template,request
 import numpy as np
 import pandas as pd
 import os
-from AutoMobilePriceRegression.pipeline.stage_05_prediction import PredictionPipeline
-from sklearn.preprocessing import LabelEncoder
+from AutoMobilePriceRegression.pipeline.prediction import PredictionPipeline
 
 
 
 app=Flask(__name__)
 
-
 @app.route('/',methods=['GET'])
 def homepage():
     return render_template('index.html')
-
 
 
 @app.route('/train',methods=["GET"])
@@ -63,8 +60,6 @@ def index():
 
     else:
         return render_template('index.html')
-
-
 
 
 

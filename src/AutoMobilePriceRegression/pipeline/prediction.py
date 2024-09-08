@@ -12,5 +12,5 @@ class PredictionPipeline:
     def predict(self,input_data):
         prediction=self.model.predict(input_data)
 
-        return prediction 
+        return np.round(prediction) 
     
